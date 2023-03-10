@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
           Grow with data.
         </h1>
-        <div>Research, Innovation for Big data</div>
+        <p className='md:text-5xl sm:text-4xl text-xl font-bold'>Research, Innovation for Big data</p>
       </div>
     </div>
   );
