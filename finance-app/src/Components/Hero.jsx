@@ -24,6 +24,7 @@ const Hero = () => {
         />
       </div>
       <p className='md:text-2xl text-xl font-bold text-gray-600'>Develop your serverless platform worth millions of packages.</p>
+      <button className='bg-green w-[200px] rounded-md font-medium my-6 px-6'>Get started</button>
       </div>
     </div>
   );
