@@ -24,7 +24,7 @@ const Hero = () => {
         />
       </div>
       <p className='md:text-2xl text-xl font-bold text-gray-600'>Develop your serverless platform worth millions of packages.</p>
-      <button className='bg-green w-[200px] rounded-md font-medium my-6 px-6'>Get started</button>
+      <button className='bg-[#00df9a] w-[200px] rounded-md mx-auto font-medium my-6 py-3 text-black'>Get started</button>
       </div>
     </div>
   );
