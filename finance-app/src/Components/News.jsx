@@ -8,6 +8,12 @@ const News = () => {
           <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Want tips & tricks to optmize your flow</h1>
           <p>Signup to our news letter and stay updated.</p>
         </div>
+        <div className='my-4'>
+    <div>
+      <input type="email" placeholder='Enter your Email' />
+      <button className='bg-[#00df9a] w-[200px] rounded-md mx-auto font-medium my-6 py-3 text-black'>Notify me</button>
+    </div>
+        </div>
 
       </div>
       
