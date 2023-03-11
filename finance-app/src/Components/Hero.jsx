@@ -12,11 +12,11 @@ const Hero = () => {
           Grow with data.
         </h1>
         <div className='flex justify-center items-center'>
-        <p className="md:text-5xl sm:text-4xl text-xl font-bold">
-          Research, Innovation for Big data
+        <p className="md:text-5xl sm:text-4xl py-4 text-xl font-bold">
+          Research, Inn for Big data
         </p>
         <Typed
-          className="md:text-5xl sm:text-4xl pl-2 text-xl font-bold"
+          className="md:text-5xl sm:text-4xl md:pl-4 pl-2 text-xl font-bold"
           strings={['JS', 'DevOP', 'ML']}
           typeSpeed={120}
           backSpeed={140}
