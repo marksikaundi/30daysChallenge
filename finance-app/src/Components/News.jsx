@@ -10,8 +10,8 @@ const News = () => {
         </div>
         <div className='my-4'>
     <div>
-      <input type="email" placeholder='Enter your Email' />
-      <button className='bg-[#00df9a] w-[200px] rounded-md mx-auto font-medium my-6 py-3 text-black'>Notify me</button>
+      <input className='p-3 flex w-full rounded-md text-black' type="email" placeholder='Enter your Email' />
+      <button className='bg-[#00df9a] w-[200px] rounded-md mx-auto font-medium ml-4 my-6 px-6 py-3 text-black'>Notify me</button>
     </div>
         </div>
 
