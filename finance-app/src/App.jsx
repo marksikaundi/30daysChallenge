@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Analytics from './Components/Analytics';
 import News from './Components/News';
+import Cards from './Components/Cards';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Analytics />
       <News />
+      <Cards />
     </div>
   ) 
 }

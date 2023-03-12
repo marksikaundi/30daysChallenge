@@ -1,30 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { EditorState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import draftToHtml from 'draftjs-to-html';
+import htmlToDraft from 'html-to-draftjs';
 
-function Editor() {
+
+class EditorConvertToHTML extends Component {
   state = {
-    editorState: editorState.createEmpty(),
-  };
+    editorState: EditorState.createEmpty(),
+  }
 
-  onEditorStateChange = (editorState) => {
+  onEditorStateChange: Function = (editorState) => {
     this.setState({
       editorState,
     });
   };
-  const { editorState } = this.state;
-  return (
-    <div>
-      <Editor
-        editorState={editorState}
-        toolbarClassName="toolbarClassName"
-        wrapperClassName="wrapperClassName"
-        editorClassName="editorClassName"
-        onEditorStateChange={this.onEditorStateChange}
-      />
-      ;
-    </div>
-  );
-}
 
-export default Editor;
+  render() {
+    const { editorState } = this.state;
+    return (
+      <div>
+        <Editor
+          editorState={editorState}
+          wrapperClassName="demo-wrapper"
+          editorClassName="demo-editor"
+          onEditorStateChange={this.onEditorStateChange}
+        />
+        <textarea
+          disabled
+          value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
+        />
+      </div>
+    );
+  }
+}
