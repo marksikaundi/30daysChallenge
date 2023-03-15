@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
   return (
     <nav className="container mx-auto flex justify-between items-center">
-      <div className="font-bold text-3xl">Lendbox</div>
+      <div className="font-bold text-3xl">LendaApp</div>
       <div className="flex">
         <a href="#" className="text-gray-500 hover:text-gray-900 ml-4">About Us</a>
         <a href="#" className="text-gray-500 hover:text-gray-900 ml-4">Contact</a>
